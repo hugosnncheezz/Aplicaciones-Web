@@ -1,0 +1,72 @@
+/* --- Estilo general del documento --- */
+body {
+    background-color: white;
+    margin: 20px;
+}
+
+/* --- Título principal --- */
+h1 {
+    color: red;
+    font-size: 28px;
+}
+
+/* --- Contenedor de cada trabajador --- */
+.trabajador {
+    margin: 20px auto;
+    width: 80%;
+    border: 2px solid black; /* borde exterior grueso */
+    padding: 10px;
+    box-shadow: 0px 0px 3px black;
+}
+
+/* --- Fondo gris oscuro para los bloques --- */
+.gris-oscuro {
+    background-color: #a9a9a9; /* gris oscuro */
+}
+
+/* --- Títulos de trabajadores SIN línea inferior --- */
+.titulo-azul {
+    color: blue;
+    text-align: center;
+    padding: 10px;
+    background-color: #a9a9a9;
+    font-weight: bold;
+    border-bottom: none; /* línea eliminada */
+}
+
+.titulo-verde {
+    color: green;
+    text-align: center;
+    padding: 10px;
+    background-color: #a9a9a9;
+    font-weight: bold;
+    border-bottom: none; /* línea eliminada */
+}
+
+/* --- Recuadros internos (Datos personales y Estudios) --- */
+.caja {
+    background-color: #a9a9a9;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid black; /* bordes en negrita */
+}
+
+/* --- Subtítulos dentro de cada caja --- */
+h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* --- Listas --- */
+ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+/* --- Subrayado y negrita en los datos --- */
+u {
+    font-weight: bold;
+}
