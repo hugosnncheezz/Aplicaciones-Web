@@ -1,94 +1,110 @@
-/* Estilos generales */
+/* === Estilos generales === */
 body {
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4c7a1; /* Fondo color carne */
     margin: 0;
     padding: 0;
-    background-color: #fafafa;
-    color: #333;
 }
 
-/* Cabecera */
+/* === Cabecera === */
 header {
+    background-color: #b35c00; /* Marrón oscuro */
+    color: white;
     text-align: center;
-    background-color: #ffb85c;
-    padding: 30px 10px;
-    border-bottom: 4px solid #e66a00;
+    padding: 25px;
+    font-size: 1.8em;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2em;
-    color: #fff;
-}
-
-/* Contenedor principal */
+/* === Contenedor principal === */
 main {
     display: flex;
     justify-content: center;
-    padding: 40px 0;
+    padding: 40px 10px;
 }
 
-/* Caja de receta */
+/* === Recuadro blanco centrado === */
 .receta {
-    background-color: #fff;
-    width: 80%;
-    max-width: 900px;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 20px; /* Curvas suaves */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    max-width: 800px;
+    width: 100%;
 }
 
-/* Imagen */
-.imagen-receta img {
-    width: 100%;
-    border-radius: 15px;
+/* === Título de la receta === */
+.receta h2 {
+    text-align: center;
+    color: #b35c00;
+    font-size: 1.8em;
+    margin-top: 0;
+}
+
+.descripcion {
+    text-align: center;
+    color: #555;
     margin-bottom: 25px;
 }
 
-/* Títulos */
-h1, h2 {
-    color: #b22222;
+/* === Imagen centrada === */
+.imagen-receta {
+    text-align: center;
+    margin-bottom: 25px;
 }
 
-h1 {
-    font-size: 1.8em;
-    margin-bottom: 15px;
+.imagen-receta img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
 }
 
-h2 {
-    margin-top: 30px;
+/* === Bloque de características === */
+.caracteristicas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #fff8e6;
+    border-left: 5px solid #e68a00;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
 }
 
-/* Lista */
-ul {
-    list-style-type: square;
-    padding-left: 25px;
-    line-height: 1.6em;
+.caracteristicas p {
+    margin: 5px 0;
+    width: 48%;
 }
 
-/* Tabla */
+/* === Tabla de ingredientes === */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 15px;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
-}
-
-th, td {
-    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
     text-align: left;
 }
 
-th {
-    background-color: #ffe4c4;
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
 }
 
-/* Párrafos */
-.elaboracion p {
-    text-align: justify;
+th {
+    background-color: #b35c00;
+    color: white;
+}
+
+/* === Subtítulos === */
+h3 {
+    color: #b35c00;
+    border-bottom: 2px solid #e68a00;
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+
+/* === Texto de elaboración === */
+p {
     line-height: 1.6em;
-    margin-bottom: 15px;
+    text-align: justify;
 }
