@@ -1,0 +1,78 @@
+/* Estilos generales */
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin: 40px;
+}
+
+/* Cabeceras */
+h1 {
+    color: #333;
+    font-size: 20px;
+}
+
+h2 {
+    color: #666;
+    font-size: 16px;
+}
+
+/* Párrafos y listas */
+p, li {
+    color: #000;
+    font-size: 16px;
+}
+
+/* Imagen */
+img {
+    display: block;
+    margin: 10px 0 20px 0;
+}
+
+/* Tabla */
+table {
+    border-collapse: collapse;
+    border: 1px solid #000;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+caption {
+    font-size: 14px;
+    color: #000;
+    caption-side: top;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Colores de fondo */
+thead {
+    background-color: #666;
+    color: white;
+}
+
+tbody {
+    background-color: #fff;
+    color: #000;
+}
+
+tfoot {
+    background-color: #ccc;
+    color: #000;
+}
+
+/* Enlace */
+a {
+    color: blue;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
