@@ -1,0 +1,94 @@
+/* Estilos generales */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: #333;
+}
+
+/* Cabecera */
+header {
+    text-align: center;
+    background-color: #ffb85c;
+    padding: 30px 10px;
+    border-bottom: 4px solid #e66a00;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #fff;
+}
+
+/* Contenedor principal */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+/* Caja de receta */
+.receta {
+    background-color: #fff;
+    width: 80%;
+    max-width: 900px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Imagen */
+.imagen-receta img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+/* Títulos */
+h1, h2 {
+    color: #b22222;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+/* Lista */
+ul {
+    list-style-type: square;
+    padding-left: 25px;
+    line-height: 1.6em;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #ffe4c4;
+}
+
+/* Párrafos */
+.elaboracion p {
+    text-align: justify;
+    line-height: 1.6em;
+    margin-bottom: 15px;
+}
