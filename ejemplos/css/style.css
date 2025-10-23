@@ -5,24 +5,41 @@
 }
 
 
-/* Establecemos altura completa de página*/
+/* Establecemos altura completa del documento*/
 html, body {
     height: 100%;
 }
 
-/*Configuración general del body*/
+/*El body se convierte en contenedor flex
+    - flex-direction: column - apila verticalmente el header, main y footer
+    - min-height: 100vh - ocupa toda la altura de la ventana (vh = viewport height)*/
 body {
     margin: 0;
     font-family: Arial, Arial, Helvetica, sans-serif;
     color: #333;
     background: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /*Cerramos y rellenamos la cabecera*/
+/*  CABECERA con FLEX: dos zonas - logo/título (marca) y menú (nav)*/   
 .cabecera {
     text-align: center;
     padding: 1rem;
+    color: #fff;
+    background: #2c3e50;
+    display:flex;      
+    justify-content: space-between;       /*Posiciona marca izq. y nav derecha*/   
+    align-items: center;       /*Centra verticalmente los elementos*/
 }  
+
+/*Tamaño de la imagen (logo)*/
+.logo {
+    height: 100px;
+    width: auto;
+}
 
 /*Título de la cabecera sin márgenes extra y color destacado*/
 .titulo¨{
@@ -30,9 +47,37 @@ body {
     color: #2c3e50;
 }
 
+/*Menú de navegación*/
+.menu {
+    list-style-type: none;
+    display: flex;          /*Para colocar los enlaces/items en línea*/
+    flex-direction: row;    /*Por defecto es row, por tanto podemos prescindir de esta línea*/ 
+    gap: 1.5rem;            /*Espacio entre enlaces*/
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilo básicos de los enlaces del menú*/
+.menu a {
+    color: #fff;
+    text-decoration: none;      /*Elimina el subrayado*/
+    font-weight: bold;          /*Aplica negrita a los enlaces*/
+}
+
+/*Efecto hover en los enlaces*/
+.menu a:hover {
+    color: #e74c3c;
+}
+
 /*Zona principal (main): aplicamos relleno*/
 #contenido-principal {
     padding: 1rem;
+    flex-grow :1;            /*IMPORTANTE: para "empujar" al footer hacia abajo*/
+    /* flex :1;*/            /* Atajo de las propiedades flex-grow y flex-basis*/
+
+    display: flex;           /*Convierto al main como contenedor flex*/
+    flex-direction: column;  
+    gap: 1rem;
 }
 
 /*Centramos cabecera y pie*/
@@ -80,6 +125,25 @@ Listas en dos columnas: usamos flexbox para alinear dos elementos en horizontal*
 width: 100%;
 border-collapse: collapse;
 margin-top: 1rem;
+}
+
+/*Bordes y relleno de la tabla*/
+.tabla th, .tabla td{
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/*Cabecera de la tabla con estilo diferenciado*/
+.tabla th {
+    background:#2c3e50;
+    color: #fff;
+    text-align: center;
+}
+
+/*Contenido de tabla alineado a la izquierda*/  
+.tabla td {
+    text-align: left;
+    white-space : nowrap; /*Evita saltos de líneas en celdas*/
 }
 
 /*Estilo pie de página*/
