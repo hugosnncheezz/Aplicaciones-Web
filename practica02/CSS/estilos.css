@@ -1,0 +1,182 @@
+/* --- GENERAL --- */
+* {
+box-sizing: border-box;
+}
+
+html,
+body {
+height: 100%;
+margin: 0;
+padding: 0;
+}
+
+body {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+background-color: #ffffff;
+color: #333333;
+}
+
+/* --- CABECERA --- */
+header {
+display: flex;
+justify-content: center; /* logo centrado */
+align-items: center;
+padding: 1.5rem 0;
+}
+
+header img {
+width: 420px;  /* logo un poco más grande */
+height: auto;
+}
+
+
+
+/* --- CONTENIDO PRINCIPAL --- */
+main {
+flex: 1 0 auto;
+display: flex;
+justify-content: flex-start; /* ligeramente hacia la izquierda */
+align-items: flex-start;
+padding: 2rem 0 2rem 6rem; /* margen izquierdo mayor (6rem) */
+}
+
+
+
+/* --- FORMULARIO --- */
+form {
+width: 400px;
+}
+
+fieldset {
+background-color: #f4f1ed;       /* Fondo */
+color: firebrick;                /* Color texto etiquetas */
+border: 2px solid darkgoldenrod; /* Borde dorado */
+border-radius: 7px;
+padding: 1rem 1.25rem;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Pequeña sombra para realce */
+}
+
+legend {
+color: darkblue;
+font-weight: bold;
+font-size: 1.1rem;
+}
+
+/* --- CAMPOS --- */
+.campo {
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 10px;
+margin-bottom: 8px;
+}
+
+.campo label {
+min-width: 140px;
+font-weight: bold;
+color: firebrick;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="number"],
+.campo input[type="time"],
+.campo select,
+.campo textarea,
+.campo input[type="file"] {
+flex: 1 1 auto;
+border: 1px solid #ccc;
+border-radius: 4px;
+padding: 0.35rem;
+font-size: 0.95rem;
+}
+
+/* --- TEXTAREA --- */
+.campo.area {
+align-items: flex-start;
+}
+
+.campo.area label {
+padding-top: 0.4rem;
+}
+
+/* --- CAMPO IMAGEN --- */
+.imagen-campo {
+flex-direction: column;
+align-items: flex-start;
+gap: 5px;
+}
+
+.imagen-campo input[type="file"] {
+width: 100%;
+}
+
+/* --- BOTONES --- */
+.botones {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+margin-top: 10px;
+}
+
+button {
+padding: 0.5rem 1.25rem;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.95rem;
+}
+
+button[type="submit"],
+button[type="reset"] {
+background-color: #f1f1f1;
+color: #333;
+border: 1px solid #ccc;
+transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+background-color: #e3e3e3;
+}
+
+
+/* --- PIE DE PÁGINA --- */
+footer {
+background-color: #333;
+color: white;
+text-align: center;
+padding: 10px 0;
+}
+
+footer h3 {
+margin: 0.5rem 0 0.25rem;
+color: #f7c600; /* color dorado */
+font-size: 1.3rem; 
+letter-spacing: 0.5px; /* ligera separación entre letras */
+font-weight: bold;
+}
+
+
+/* --- REDES SOCIALES --- */
+footer .redes {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+padding: 0.5rem 0;
+}
+
+footer .redes a {
+text-decoration: none;
+}
+
+footer .redes img {
+width: 48px;
+height: 48px;
+display: inline-block;
+}
