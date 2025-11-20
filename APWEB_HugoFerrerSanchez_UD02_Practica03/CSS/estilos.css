@@ -1,0 +1,113 @@
+/* === CUERPO === */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F4F4;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* === CABECERA === */
+header {
+    background-color: #4CAF50;
+    padding: 1.5rem 1rem;
+    color: white;
+}
+
+.cabecera-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecera-contenido img {
+    width: 110px;
+    height: 110px;
+    margin-right: 20px;
+}
+
+.cabecera-contenido h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.subtitulo {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 1.1rem;
+    color: #e8f5e9;
+}
+
+/* === MAIN === */
+main {
+    padding: 0 2rem 2rem 2rem;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin: 1.8rem 0 2.5rem 0;
+}
+
+/* === GRID PRODUCTOS === */
+.contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;                
+    padding: 0 10px;          
+    max-width: 1200px;       
+    margin: 0 auto;          
+}
+
+
+/* === TARJETAS MÁS PEQUEÑAS === */
+.card {
+    background-color: white;
+    padding: 20px;
+    width: 230px;                 
+    border-radius: 12px;
+    border: 2px solid #ccc;
+    text-align: center;
+    margin: 0 auto;               
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.card img {
+    width: 150px;                
+    height: auto;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.card p {
+    color: #777;
+    font-size: 0.95rem;
+}
+
+.card .precio {
+    font-size: 1.3rem;
+    color: #E60000;
+}
+
+/* Hover */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.25);
+}
+
+/* === FOOTER === */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: .9rem;
+    margin-top: auto;
+}
