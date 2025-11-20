@@ -8,6 +8,11 @@ body {
     flex-direction: column;
 }
 
+/* CONTENIDO PRINCIPAL */
+main {
+    padding: 0 2rem 2rem 2rem; 
+}
+
 /* === CABECERA === */
 header {
     background-color: #4CAF50;
